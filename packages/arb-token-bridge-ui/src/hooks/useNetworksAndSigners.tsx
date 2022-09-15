@@ -172,7 +172,7 @@ export function NetworksAndSignersProvider(
           // Web3Provider is connected to an L1 network. We instantiate a provider for the L2 network.
           const l2Provider = new JsonRpcProvider(rpcURLs[_selectedL2ChainId!])
 
-          await addCustomNetwork({
+          addCustomNetwork({
             customL1Network: {
               "blockTime": 10,
               "chainID": 1337,
@@ -251,7 +251,7 @@ export function NetworksAndSignersProvider(
           }
 
 
-          await addCustomNetwork({
+          addCustomNetwork({
             customL1Network: {
               "blockTime": 10,
               "chainID": 1337,
