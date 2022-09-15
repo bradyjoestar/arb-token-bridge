@@ -13,7 +13,9 @@ import 'tippy.js/themes/light.css'
 
 import './styles/tailwind.css'
 
-if (process.env.NODE_ENV === 'development') {
+if (process.env.NODE_ENV === 'development' || process.env.NODE_ENV === 'production' ) {
+  console.log("register local network")
+  console.log("on production we will register the local network for test")
   registerLocalNetwork()
 }
 
